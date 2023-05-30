@@ -4,13 +4,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "co.tiagoaguiar.tutorial.jokerappdev"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
 
@@ -33,6 +32,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+    namespace 'co.tiagoaguiar.tutorial.jokerappdev'
 }
 
 dependencies {
@@ -45,6 +45,10 @@ dependencies {
 
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+
+    implementation 'com.github.lisawray.groupie:groupie:2.9.0'
+
+    implementation 'androidx.core:core-splashscreen:1.0.0-alpha01'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
