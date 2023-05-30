@@ -4,13 +4,12 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "co.tiagoaguiar.tutorial.jokerappdev"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
 
@@ -33,6 +32,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+    namespace 'co.tiagoaguiar.tutorial.jokerappdev'
 }
 
 dependencies {
