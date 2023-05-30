@@ -3,6 +3,7 @@ package co.tiagoaguiar.tutorial.jokerappdev
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -18,6 +19,9 @@ class MainActivity : AppCompatActivity() {
   private lateinit var binding: ActivityMainBinding
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
+
+    installSplashScreen()
+
     binding = ActivityMainBinding.inflate(layoutInflater)
     setContentView(binding.root)
 
